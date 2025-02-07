@@ -5,7 +5,7 @@ import java.io.{BufferedWriter, FileWriter}
 object INSERTPRODUCTIONCOMPANIES {
   val pathSQLProductionCompani = "src/main/INSERT_PRODUCTION_COMPANI.sql"
 
-  def InsertIntoBelongToCollection(data: List[(Int,Int , String)]): Boolean =
+  def InsertIntoProductionCompanies(data: List[(Int,Int , String)]): Boolean =
     def generateINSERT(row: (Int, Int, String)): String =
       s"INSERT INTO production_companies (id_movie, ID_COMPANY, name) VALUE   (${row._1},${row._2},'${row._3}');"
 

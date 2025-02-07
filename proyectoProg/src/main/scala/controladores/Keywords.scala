@@ -47,7 +47,7 @@ object Keywords extends App {
         }
       }
     }
-    if (INSERTKEYWORDS.InsertIntoBelongToCollection(movieKeywordsList.toList))
+    if (INSERTKEYWORDS.InsertIntoKewords(movieKeywordsList.toList))
       println("CORRECTO")
     else
       println("ERROR")

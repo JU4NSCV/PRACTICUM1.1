@@ -43,7 +43,7 @@ object SpokenLanguages extends App {
         movieSpokenLanguagesList.append((movieId, spokenLanguage.iso_639_1, spokenLanguage.name))
       }
     }
-    if (INSERTSPOKENLANGUAGES.InsertIntoBelongToCollection(movieSpokenLanguagesList.toList))
+    if (INSERTSPOKENLANGUAGES.InsertIntoSpokenlanguages(movieSpokenLanguagesList.toList))
       println("CORRECTO")
     else
       println("ERROR")

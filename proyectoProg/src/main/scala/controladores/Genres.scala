@@ -50,6 +50,10 @@ object Genres extends App {
       }
     }
     
+    if (INSERTGENRES.InsertIntoGenres(personnelJobList.toList))
+      println("CORRECTO")
+    else
+      println("ERROR")
 
   } catch {
     case e: Exception => println(s"Error crítico: ${e.getMessage}")

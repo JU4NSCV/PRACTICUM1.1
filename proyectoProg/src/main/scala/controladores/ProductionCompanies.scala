@@ -47,7 +47,7 @@ object ProductionCompanies extends App {
         }
       }
     }
-    if (INSERTPRODUCTIONCOMPANIES.InsertIntoBelongToCollection(movieCompaniesList.toList))
+    if (INSERTPRODUCTIONCOMPANIES.InsertIntoProductionCompanies(movieCompaniesList.toList))
       println("CORRECTO")
     else
       println("ERROR")

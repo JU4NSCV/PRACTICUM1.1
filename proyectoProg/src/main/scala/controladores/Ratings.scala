@@ -48,7 +48,8 @@ object Ratings extends App {
         }
       }
     }
-    if (INSERTRATING.InsertIntoBelongToCollection(movieUserList.toList))
+    
+    if (INSERTRATING.InsertIntoRating(movieUserList.toList))
       println("CORRECTO")
     else
       println("ERROR")

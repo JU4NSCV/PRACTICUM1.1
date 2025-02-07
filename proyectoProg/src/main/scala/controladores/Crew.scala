@@ -78,7 +78,7 @@ object Crew extends App {
       }
     }
 
-    if (INSERTCREW.InsertIntoBelongToCollection(personnelJobList.toList))
+    if (INSERTCREW.InsertIntoCrew(personnelJobList.toList))
       println("CORRECTO")
     else
       println("ERROR")

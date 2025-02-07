@@ -47,7 +47,7 @@ object ProductionCountries extends App {
       }
     }
     
-    if (INSERTRODUCTIONCOUNTRIES.InsertIntoBelongToCollection(movieCountriesList.toList))
+    if (INSERTRODUCTIONCOUNTRIES.InsertIntoProductionCountries(movieCountriesList.toList))
       println("CORRECTO")
     else
       println("ERROR")

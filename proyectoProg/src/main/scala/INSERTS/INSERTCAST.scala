@@ -5,9 +5,9 @@ import java.io.{BufferedWriter, FileWriter}
 object INSERTCAST {
   val pathSQLCast = "src/main/INSERT_CAST.sql"
 
-  def InsertIntoBelongToCollection(data: List[(Int, Int, String, Int, Int, String)]): Boolean =
-    def generateINSERT(row: (Int, Int, String, Int, Int, String)): String =
-      s"INSERT INTO _cast (id_movie, id, character, order, cast_id, credit_id) VALUE  (${row._1},${row._2},'${row._3}',${row._4},${row._5},'${row._6}');"
+  def InsertIntoCast(data: List[(Int, Int, String, Int, Int, String, String)]): Boolean =
+    def generateINSERT(row: (Int, Int, String, Int, Int, String, String)): String =
+      s"INSERT INTO _cast (id_movie, cast_id, _character, _order, credit_id,profile_path) VALUE  (${row._1},${row._2},'${row._3}',${row._5},'${row._6}','${row._7}');"
 
     try {
       val file = new BufferedWriter(new FileWriter(pathSQLCast))

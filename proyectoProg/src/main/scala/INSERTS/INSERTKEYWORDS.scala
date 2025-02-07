@@ -5,7 +5,7 @@ import java.io.{BufferedWriter, FileWriter}
 object INSERTKEYWORDS {
   val pathSQLKeywords = "src/main/INSERT_KEYWORDS.sql"
 
-  def InsertIntoBelongToCollection(data: List[(Int, Int, String)]): Boolean =
+  def InsertIntoKewords(data: List[(Int, Int, String)]): Boolean =
     def generateINSERT(row: (Int, Int, String)): String =
       s"INSERT INTO keywords (id_movie, Int, name) VALUE (${row._1},${row._2},'${row._3}');"
 
